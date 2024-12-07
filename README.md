@@ -5,8 +5,9 @@
 ## Progreso 📈
 - [x] Día 1: ✅ Completado
 - [x] Día 2: ✅ Completado
-- [ ] Día 3: ❌ Pendiente
+- [x] Día 3: ✅ Pendiente
 - [ ] Día 4: ❌ Pendiente
+
 Cada día tiene su propia carpeta que incluye los siguientes archivos:
 - `input.txt`: El archivo de entrada proporcionado por el desafío.
 - `solution.py`: Mi solución al problema
