@@ -14,6 +14,7 @@
 - [x] Día 9:  ✅ Completado
 - [x] Día 10: ✅ Completado
 - [ ] Día 11: ❌ Pendiente
+- [ ] Día 12: ❌ Pendiente
 
 Cada día tiene su propia carpeta que incluye los siguientes archivos:
 - `input.txt`: El archivo de entrada proporcionado por el desafío.
