@@ -1,0 +1,15 @@
+Botón A: X+94, Y+34  
+Botón B: X+22, Y+67  
+Premio: X=8400, Y=5400  
+
+Botón A: X+26, Y+66  
+Botón B: X+67, Y+21  
+Premio: X=12748, Y=12176  
+
+Botón A: X+17, Y+86  
+Botón B: X+84, Y+37  
+Premio: X=7870, Y=6450  
+
+Botón A: X+69, Y+23  
+Botón B: X+27, Y+71  
+Premio: X=18641, Y=10279  
