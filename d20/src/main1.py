@@ -113,8 +113,8 @@ def find_cheats(grid, path):
                     # Calcular distancia ahorrada
                     original_distance = j  
                     saved_time = original_distance #- cheat_distance
-                    print(f" S {path[i]} \t E{path[j]} \t T {saved_time} \tj {i} {j}  ")
-                    cheats.append((path[i], path[j], saved_time))
+                    #print(f" S {path[i]} \t E{ventana_evaluacion[j]} \t T {saved_time} \tj {i} {j}  ")
+                    cheats.append((path[i], ventana_evaluacion[j], saved_time))
     return cheats
 def imprimir_matrix(matrix):
     for line in matrix:
@@ -162,7 +162,7 @@ def main():
 
     # Encuentra el camino más corto sin hacer trampa
     camino = bfs_with_path(grid,starti,endf)
-    print(f"distancia {len(camino)}\n {camino}")
+    print(f"distancia {len(camino)}\n ")
     imprimir_matrix_con_movimiento(grid, camino)
     #no_cheat_dist = bfs(grid, start, endf)
 
@@ -171,7 +171,7 @@ def main():
     if camino:
     # Analyze cheats along the path
         cheats = find_cheats(grid, camino)
-        print(cheats)
+        #print(cheats)
         # Contar y mostrar los trucos que cumplen criterios específicos
         significant_cheats = [cheat for cheat in cheats if cheat[2] >= 100]
         #max_tr = max(elemento[2] for elemento in vector)
@@ -182,15 +182,16 @@ def main():
                 conteo[valor] += 1
             else:
                 conteo[valor] = 1
-        print(conteo)
+        #print(conteo)
         for valor, cantidad in conteo.items():
             print(f"Hay {cantidad} trucos que ahorran {valor} picosegundos")
         imprimir_matrix_con_trampa(grid,camino,cheats)
             
-        print("Number of cheats saving at least 100 picoseconds:", len(significant_cheats))
-        print("Details of significant cheats:", significant_cheats)
+        print("Número de trucos que ahorran al menos 100 picosegundos:", len(significant_cheats))
+        #print("Detalles de trampas significativas:", significant_cheats)
+        print(f"Tiempo de ejecución: {(time.perf_counter() - timerstart) * 1000:.2f} ms")
     else:
-        print("No valid path found from start to end.")
-
+        print("No se encontró ninguna ruta válida desde el principio hasta el final.")
+    
 if __name__ == "__main__":
     main()
