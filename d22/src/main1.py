@@ -63,7 +63,7 @@ def main():
     start = time.perf_counter()  # inicializa el contador 
     # Configura el analizador de argumentos
     parser = argparse.ArgumentParser(
-        description="Solucion de Advent of Code dia 21 parte 1",
+        description="Solucion de Advent of Code dia 22 parte 1",
         usage=f"python {sys.argv[0]} <archivo>"
     )
     parser.add_argument(
@@ -74,9 +74,6 @@ def main():
     
     # Analiza los argumentos
     args = parser.parse_args()
-    # Ejemplo proporcionado
-    #registers = [729, 0, 0]  # Valores iniciales de los registros
-    #program = [0, 1, 5, 4, 3, 0]  # Programa
     initial_secrets = leer_archivo(args.archivo)
     print(initial_secrets) #comprobacion de entrada
     # Entrada del problema
