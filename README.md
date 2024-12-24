@@ -25,7 +25,10 @@
 - [x] Día 19: ✅ Completado
 - [ ] Día 20: ❌ Pendiente
 - [ ] Día 21: ❌ Pendiente
-- [ ] Día 21: ❌ Pendiente
+- [ ] Día 22: ❌ Pendiente
+- [ ] Día 23: ❌ Pendiente
+- [ ] Día 24: ❌ Pendiente
+ 
  
 Cada día tiene su propia carpeta que incluye los siguientes archivos:
 - `input.txt`: El archivo de entrada proporcionado por el desafío.
