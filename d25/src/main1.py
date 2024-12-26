@@ -70,7 +70,7 @@ def main():
 
     # Configurar argumentos
     parser = argparse.ArgumentParser(
-        description="Solución de Advent of Code día 24 parte 2",
+        description="Solución de Advent of Code día 25 parte 1",
         usage=f"python {sys.argv[0]} <archivo>"
     )
     parser.add_argument('archivo', type=str, help="Ruta del archivo de entrada")
